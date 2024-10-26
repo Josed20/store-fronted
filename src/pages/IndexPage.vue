@@ -1,4 +1,5 @@
 <template>
+  <loginForm/>
   <q-page class="flex flex-center">
     <img
       alt="Quasar logo"
@@ -10,8 +11,9 @@
 
 <script>
 import { defineComponent } from 'vue';
-
+import LoginForm from "components/auth/LoginForm.vue";
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {LoginForm}
 });
 </script>
